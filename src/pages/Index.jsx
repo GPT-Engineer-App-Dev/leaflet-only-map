@@ -1,11 +1,13 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { Link } from 'react-router-dom';
 
 const Index = () => {
   return (
     <div className="flex-grow flex justify-center items-center">
       <div className="text-center">
-        <h1 className="text-3xl">Your Blank Canvas</h1>
-        <p>Chat with the agent to start making edits.</p>
+        <h1 className="text-3xl mb-4">Welcome to the Leaflet Map Demo</h1>
+        <Link to="/map" className="text-blue-500 hover:text-blue-700 underline">
+          View Leaflet Map
+        </Link>
       </div>
     </div>
   );
